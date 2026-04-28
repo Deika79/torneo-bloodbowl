@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Galería</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="logo">
+        <img src="assets/img/banner.jpg" alt="Banner">
+    </div>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="equipos.html">Equipos</a>
+        <a href="clasificacion.html">Clasificación</a>
+        <a href="galeria.html">Galería</a>
+    </nav>
+</header>
+
+<main class="container">
+    <h2>Galería del Torneo</h2>
+
+    <div class="galeria-grid">
+
+        <video controls>
+            <source src="assets/videos/video1.mp4" type="video/mp4">
+        </video>
+
+        <img src="assets/img/galeria/foto1.jpg" alt="">
+        <img src="assets/img/galeria/foto2.jpg" alt="">
+        <img src="assets/img/galeria/foto3.jpg" alt="">
+        <img src="assets/img/galeria/foto4.jpg" alt="">
+        <img src="assets/img/galeria/foto5.jpg" alt="">
+        <img src="assets/img/galeria/foto6.jpg" alt="">
+
+    </div>
+</main>
+
+<footer class="footer">
+    <p>© 2026 Torneo 6 Raciones</p>
+</footer>
+
+<!-- 🔥 LIGHTBOX (SIEMPRE dentro del body) -->
+<div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-img" id="lightbox-img">
+</div>
+
+<!-- 🔥 JS SIEMPRE AL FINAL -->
+<script src="js/galeria.js"></script>
+
+</body>
+</html>

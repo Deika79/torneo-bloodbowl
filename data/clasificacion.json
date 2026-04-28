@@ -1,0 +1,90 @@
+[
+    {
+        "equipo": "Askerosos",
+        "victorias": 0,
+        "empates": 0,
+        "derrotas": 0,
+        "td_favor": 0,
+        "td_contra": 0,
+        "heridos_favor": 0,
+        "heridos_contra": 0,
+        "expulsiones": 0
+    },
+    {
+        "equipo": "BBC",
+        "victorias": 0,
+        "empates": 0,
+        "derrotas": 0,
+        "td_favor": 0,
+        "td_contra": 0,
+        "heridos_favor": 0,
+        "heridos_contra": 0,
+        "expulsiones": 0
+    },
+    {
+        "equipo": "Reikland",
+        "victorias": 0,
+        "empates": 0,
+        "derrotas": 0,
+        "td_favor": 0,
+        "td_contra": 0,
+        "heridos_favor": 0,
+        "heridos_contra": 0,
+        "expulsiones": 0
+    },
+    {
+        "equipo": "Betis Balompie",
+        "victorias": 0,
+        "empates": 0,
+        "derrotas": 0,
+        "td_favor": 0,
+        "td_contra": 0,
+        "heridos_favor": 0,
+        "heridos_contra": 0,
+        "expulsiones": 0
+    },
+    {
+        "equipo": "Bembibres da Mort",
+        "victorias": 0,
+        "empates": 0,
+        "derrotas": 0,
+        "td_favor": 0,
+        "td_contra": 0,
+        "heridos_favor": 0,
+        "heridos_contra": 0,
+        "expulsiones": 0
+    },
+    {
+        "equipo": "Rata-S.A",
+        "victorias": 0,
+        "empates": 0,
+        "derrotas": 0,
+        "td_favor": 0,
+        "td_contra": 0,
+        "heridos_favor": 0,
+        "heridos_contra": 0,
+        "expulsiones": 0
+    },
+    {
+        "equipo": "Kintana Wolves",
+        "victorias": 0,
+        "empates": 0,
+        "derrotas": 0,
+        "td_favor": 0,
+        "td_contra": 0,
+        "heridos_favor": 0,
+        "heridos_contra": 0,
+        "expulsiones": 0
+    },
+    {
+        "equipo": "Amazorras de Slanesh",
+        "victorias": 0,
+        "empates": 0,
+        "derrotas": 0,
+        "td_favor": 0,
+        "td_contra": 0,
+        "heridos_favor": 0,
+        "heridos_contra": 0,
+        "expulsiones": 0
+    }
+]

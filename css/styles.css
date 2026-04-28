@@ -1,0 +1,339 @@
+:root {
+    --color-bg: #0f172a;
+    --color-primary: #c1121f;
+    --color-secondary: #1d3557;
+    --color-text: #f1f1f1;
+    --color-card: #1f2937;
+    --color-border: #444;
+}
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    background: linear-gradient(180deg, #0f172a, #020617);
+    color: var(--color-text);
+}
+
+/* HEADER */
+.header {
+    background: linear-gradient(90deg, #c1121f, #780000);
+    padding: 15px;
+    text-align: center;
+    border-bottom: 3px solid #000;
+    box-shadow: 0 0 15px rgba(0,0,0,0.8);
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+    max-height: 100px;
+}
+
+/* NAV */
+.header nav {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 6px 10px;
+}
+
+.header a:hover {
+    color: #ffd166;
+}
+
+/* CONTENIDO */
+.container {
+    padding: 15px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* HERO */
+.hero img {
+    width: 100%;
+    max-width: 100%;
+}
+
+/* TABLA */
+.table-container {
+    width: 100%;
+    overflow-x: auto; /* 🔥 clave móvil */
+}
+
+table {
+    width: 100%;
+    min-width: 700px;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: var(--color-card);
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid var(--color-border);
+    font-size: 14px;
+}
+
+th {
+    background: linear-gradient(90deg, #1d3557, #0f172a);
+}
+
+tr:nth-child(even) {
+    background: #111827;
+}
+
+/* TOP 3 */
+tr:nth-child(1) { background: #ffd70033; }
+tr:nth-child(2) { background: #c0c0c033; }
+tr:nth-child(3) { background: #cd7f3233; }
+
+/* BOTÓN */
+.btn-reset {
+    background: #c1121f;
+    padding: 10px;
+    width: 100%;
+    max-width: 250px;
+}
+
+/* EQUIPOS */
+.equipos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 15px;
+}
+
+.equipo-card img {
+    width: 100%;
+    height: 120px;
+}
+
+/* GALERÍA */
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 10px;
+}
+
+.galeria-grid img,
+.galeria-grid video {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+}
+
+/* LIGHTBOX */
+.lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.9);
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox-img {
+    max-width: 95%;
+    max-height: 90%;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 20px;
+}
+
+/* 📱 MOBILE FIRST AJUSTES */
+@media (max-width: 600px) {
+
+    h1, h2 {
+        font-size: 1.3rem;
+    }
+
+    th, td {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .equipo-card img {
+        height: 100px;
+    }
+
+    .galeria-grid img,
+    .galeria-grid video {
+        height: 110px;
+    }
+}
+
+/* 💻 TABLET */
+@media (min-width: 768px) {
+
+    .equipo-card img {
+        height: 140px;
+    }
+
+    .galeria-grid img,
+    .galeria-grid video {
+        height: 160px;
+    }
+}
+
+/* 🖥️ DESKTOP */
+@media (min-width: 1024px) {
+
+    .equipo-card img {
+        height: 160px;
+    }
+
+    .galeria-grid img,
+    .galeria-grid video {
+        height: 200px;
+    }
+}
+.form-partido {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.bloque-equipo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    max-width: 250px;
+}
+
+.bloque-equipo input,
+.bloque-equipo select {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+}
+
+.vs {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+    .form-partido {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .vs {
+        margin: 0 20px;
+        align-self: center;
+    }
+}
+/* DETALLE EQUIPO */
+.equipo-detalle {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.escudo {
+    max-width: 200px;
+}
+
+/* GALERÍA EQUIPO */
+
+.galeria-equipo {
+    display: grid;
+    grid-template-columns: 1fr; /* 🔥 una sola columna */
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.galeria-equipo img {
+    width: 100%;
+    height: auto;
+    max-height: 500px; /* 🔥 límite grande */
+    object-fit: contain;
+}
+/* PLANTILLA */
+.plantilla-equipo {
+    margin-top: 20px;
+}
+
+.plantilla-equipo img {
+    width: 100%;
+}
+/* DROPDOWN */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: #000;
+    min-width: 160px;
+    z-index: 10;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* IMAGEN PRINCIPAL */
+.jornada-main img {
+    width: 100%;
+    max-height: 1000px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+/* VIDEO */
+.jornada-video video {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* GALERÍA */
+.jornada-galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.jornada-galeria img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    .jornada-galeria {
+        grid-template-columns: 1fr;
+    }
+}
+.jornada-video iframe {
+    width: 100%;
+    height: 400px;
+}

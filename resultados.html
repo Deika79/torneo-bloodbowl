@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">
+        <img src="assets/img/banner.jpg" alt="Banner">
+    </div>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="equipos.html">Equipos</a>
+        <a href="clasificacion.html">Clasificación</a>
+        <a href="resultados.html">Resultados</a>
+    </nav>
+</header>
+
+<main class="container">
+    <h2>Introducir Resultado</h2>
+
+    <form id="form-resultados" class="form-partido">
+
+        <!-- EQUIPO A -->
+        <div class="bloque-equipo">
+            <select id="equipoA"></select>
+
+            <input type="number" id="tdA" placeholder="TD" required>
+            <input type="number" id="heridosA" placeholder="Heridos" value="0">
+            <input type="number" id="expulsionesA" placeholder="Expulsiones" value="0">
+        </div>
+
+        <!-- VS -->
+        <div class="vs">VS</div>
+
+        <!-- EQUIPO B -->
+        <div class="bloque-equipo">
+            <select id="equipoB"></select>
+
+            <input type="number" id="tdB" placeholder="TD" required>
+            <input type="number" id="heridosB" placeholder="Heridos" value="0">
+            <input type="number" id="expulsionesB" placeholder="Expulsiones" value="0">
+        </div>
+
+        <button type="submit">Guardar Resultado</button>
+
+    </form>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/supabase.js"></script>
+<script src="js/resultados.js"></script>
+
+</body>
+</html>
